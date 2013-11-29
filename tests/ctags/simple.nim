@@ -6,6 +6,15 @@ type TWord = object of TObject
   word: string
   count: int
 
+type
+  TCharSet = set[char]
+var
+  afterType: char
+
+type TEmpty = object if TObject
+var
+  afterEmpty: char
+
 type TComplexWord = object of TWord
   tag: string
 
