@@ -23,3 +23,7 @@ let str3 = r"raw string"
 if True:
   let str4 = "aaa"
 let someInt = 999
+
+# enum example
+type TDirection = enum
+    north, east, south, west
