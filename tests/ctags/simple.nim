@@ -9,6 +9,8 @@ type TWord = object of TObject
 type TComplexWord = object of TWord
   tag: string
 
+method tagCount(e: TComplexWord): int = e.count
+
 proc countWord(par: string): seq[TWord] =
   ## count words in paragraph
   result = @[]
